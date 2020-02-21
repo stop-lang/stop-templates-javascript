@@ -1,0 +1,25 @@
+{
+  "name": "stop-templates",
+  "version": "1.0.0",
+  "description": "Stop Templates Javascript",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "nyc mocha ./test"
+  },
+  "keywords": [
+    "stop templates"
+  ],
+  "author": "Kyle Shank",
+  "license": "MIT",
+  "dependencies": {
+    "antlr4": "^4.8.0",
+    "nyc": "^15.0.0",
+    "stop": "../stop-javascript",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.0.0",
+    "sinon": "^8.0.2"
+  }
+}
