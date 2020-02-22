@@ -97,7 +97,7 @@ fuck
         	expect(function(){
         		let stopInstance = new stop.Stop(stopTestContent);
                 let state = stopInstance.states["Posts"];
-                let template = new stopTemplates.Template(stopInstance, state, templateTestContent);
+                let template = new stopTemplates.StopTemplate(stopInstance, state, templateTestContent);
         	}).to.not.throw();
         });
     });

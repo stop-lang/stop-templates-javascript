@@ -35,7 +35,7 @@ Text(text: message)
         	expect(function(){
         		let stopInstance = new stop.Stop(stopTestContent);
                 let state = stopInstance.states["ViewState"];
-                let template = new stopTemplates.Template(stopInstance, state, templateTestContent);
+                let template = new stopTemplates.StopTemplate(stopInstance, state, templateTestContent);
                 let impl = {};
                 impl.executeTemplate = function(stateInstance, children){
                     var s = stateInstance.state.name + " ("+ stateInstance.properties["text"] +")\n";

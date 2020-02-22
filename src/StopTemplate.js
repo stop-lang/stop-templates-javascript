@@ -24,7 +24,7 @@ AnnotatingErrorListener.prototype.syntaxError = function(recognizer, offendingSy
  });
 };
 
-function Template(stop, state, input){
+function StopTemplate(stop, state, input){
 	var stream = antlr4.CharStreams.fromString(input);
     var lexer = new StopTemplatesLexer.StopTemplatesLexer(stream);
     var tokens = new antlr4.CommonTokenStream(lexer);
@@ -70,4 +70,4 @@ function handleErrors(listener, errors){
     }
 }
 
-module.exports = Template;
+module.exports = StopTemplate;
